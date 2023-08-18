@@ -1,0 +1,114 @@
+/* Body */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Login */
+
+.welcome-bg-img{
+    background: url('/images/welcome-bg-img.jpg');
+    height: 100vh;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome-bg-img:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+.welcome-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 370px;
+    z-index: 999;
+    text-align: center;
+    padding: 60px 32px;
+    background: rgba(225,225,225,0.04);
+    box-shadow: -1px 4px 28px 0px rgba(0,0,0,7.5);
+}
+
+.welcome-content header{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 0 35px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.welcome-field{
+    position: relative;
+    height: 45px;
+    width: 100%;
+    background: rgba(225,225,225,0.94);
+    display:flex;
+}
+
+.welcome-field i{
+    color: #222;
+    line-height: 45px;
+    width: 40px;
+}
+
+.welcome-field input{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #222;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.space{
+    margin-top: 16px;
+}
+
+.pass{
+    text-align: left;
+    margin: 10px 0;
+}
+
+.pass a{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+}
+
+.pass:hover a{
+    text-decoration: underline;
+}
+
+input[type="submit"]{
+    background:#5e5c5c ;
+    border: 1px solid #1c1d1d;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background:#000000;
+}
+
+.login{
+    color:white;
+    margin: 20px 0;
+    font-family: 'poppins',sans-serif;
+}
