@@ -16,30 +16,51 @@
             <form action="#">
                 <div class="welcome-field">
                     <i class="fa fa-user"></i>
-                    <input type="text" placeholder="Email or Phone">
+                    <input type="text" required placeholder="Email or Phone">
                 </div>
                 <div class="welcome-field space">
                     <i class="fa fa-lock"></i>
-                    <input type="password" placeholder="Password">
+                    <input type="password" class="welcome-password" required placeholder="Password">
+                    <span class="show">SHOW</span>
                 </div>
                 <div class="pass">
-                    <a href="#">Forget Password</a>
+                    <a href="#">Forget Password ?</a>
                 </div>
                 <div class="welcome-field">
-                    <span></span>
                     <input type="submit" value="LOGIN">
                 </div>
                 <div class="login">Or login with</div>
                 <div class="link">
                     <div class="facebook">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-facebook"><span>Facebook</span></i>
                     </div>
                     <div class="instagram">
-                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-instagram"><span>Instagram</span></i>
                     </div>
+                </div>
+
+                <div class="welcome-signup">Don't have account ?
+                    <a href="Signup.html">Signup Now</a>
                 </div>
             </form>
         </div>
     </div>
+
+    <script>
+        const pass_field = document.querySelector('.welcome-password');
+        const show_btn = document.querySelector('.show');
+        show_btn.addEventListener('click', function(){
+            if(pass_field.type == "password"){
+                pass_field.type = "text";
+                show_btn.style.color = "grey";
+                show_btn.textContent = "HIDE";
+            }
+            else{
+                pass_field.type = "password";
+                show_btn.style.color = "#222";
+                show_btn.textContent = "SHOW" ;          
+             }
+        });
+    </script>
 </body>
 </html>
