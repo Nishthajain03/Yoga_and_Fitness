@@ -108,18 +108,20 @@
     text-decoration: underline;
 }
 
-input[type="submit"]{
-    background:#868181 ;
+.field-login a{
+    background:#868181;
     border: 1px solid #1c1d1d;
     color: white;
     font-size: 18px;
+    padding: 20px;
     letter-spacing: 1px;
     font-weight: 550;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
+    text-decoration: none;
 }
 
-input[type="submit"]:hover{
+.field-login a:hover{
     background:#000000;
 }
 
@@ -226,13 +228,13 @@ input[type="submit"]:hover{
 .signup-field{
     position: relative;
     height: 45px;
-    width: calc(100% / 2 - 20px);
+    width: 270px;
     border: 1px solid black;
     background: rgba(225,225,225,0.94);
     display:flex;
     margin-left: 20px;
+    margin-right: 20px;
     border-radius: 5px;
-
 }
 
 .signup-field i{
@@ -253,7 +255,7 @@ input[type="submit"]:hover{
 }
 
 .bottom-space{
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 .user-details{
     display: flex;
@@ -301,21 +303,18 @@ form input[type="radio"]{
      display: none;
 }
 
-.signup-submit{
-    margin-left: 40px;
-}
-
-.signup-submit input[type="submit"]{
-    background:#868181 ;
-    border: none;
+.welcome-login{
+    margin-top: 20px;
     color: white;
-    font-size: 18px;
-    letter-spacing: 1px;
-    font-weight: 550;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
+    font-size: 15px;
+    font-family: 'poppins',sans-serif;
 }
 
-.signup-submit input[type="submit"]:hover{
-    background:#000000;
+.welcome-login a{
+    color: #bad6e8;
+    text-decoration: none;
+}
+
+.welcome-login a:hover{
+    text-decoration: underline;
 }
