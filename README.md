@@ -1,3 +1,5 @@
 #This is Responsive Frontend of of Yoga and Fitness Website. 
 
-#Using Html and Css
+#Made by using Html and Css
+
+#And named as Yogies
